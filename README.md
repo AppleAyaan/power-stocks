@@ -1,2 +1,2 @@
-# power-stocks
+# Power Stocks®
 WIP
