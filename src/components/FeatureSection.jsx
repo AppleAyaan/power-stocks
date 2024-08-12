@@ -2,15 +2,16 @@ import { features } from "../constants";
 
 const FeatureSection = () => {
   return (
+    <section id="features" className="py-10">
     <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
       <div className="text-center">
         <span className="bg-neutral-900 text-orange-500 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase">
-          Feature
+          Features
         </span>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
-          Easily build{" "}
-          <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
-            your code
+          Invest in{" "}
+          <span className="bg-gradient-to-r from-green-500 to-green-800 text-transparent bg-clip-text">
+            Stocks.
           </span>
         </h2>
       </div>
@@ -31,7 +32,17 @@ const FeatureSection = () => {
           </div>
         ))}
       </div>
+      <div className="flex justify-center my-10">
+      <a
+        href="#"
+        className="bg-gradient-to-r from-blue-100 to-blue-300 text-black py-3 px-12 mx-3 rounded-md"
+      >
+        Click to see all features!
+      </a>
+
+      </div>
     </div>
+    </section>
   );
 };
 
