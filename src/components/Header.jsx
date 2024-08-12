@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="container px-1 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
-        <div className="flex items-center flex-shrink-0 ml-[-100px]"> {/* adjust margin value for the logo and text here !!!!*/}
+        <div className="flex items-center flex-shrink-0"> {/* adjust margin value for the logo and text here !!!!*/}
           <img className="h-10 w-10 mr-2" src={logo} alt="Power Stocks Logo" />
           <span className="text-xl tracking-tight">Power Stocks</span>
         </div>
@@ -27,14 +27,16 @@ const Navbar = () => {
             ))}
           </ul>
             <div className="hidden lg:flex justify-center space-x-0 items-center">
-              <a href="#" className="border border-white 
-              bg-transparent 
-              text-white 
-              hover:bg-white hover:text-black hover:border-black 
-              transition-all duration-300 
-              py-2 px-4 rounded-md 
-              shadow-lg hover:shadow-xl 
-              transform hover:scale-105"
+              <a
+              href="/sign-in"
+              className="border border-white 
+                bg-transparent 
+                text-white 
+                hover:bg-white hover:text-black hover:border-black 
+                transition-all duration-300 
+                py-2 px-4 rounded-md 
+                shadow-lg hover:shadow-xl 
+                transform hover:scale-105"
               >
                 Sign In
               </a>
