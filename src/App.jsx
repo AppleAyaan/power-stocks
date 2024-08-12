@@ -3,7 +3,7 @@ import MainSection from "./components/MainSection";
 import FeatureSection from "./components/FeatureSection";
 import Workflow from "./components/Workflow";
 import Footer from "./components/Footer";
-import Pricing from "./components/Pricing";
+import CallToAction from "./components/CallToActions";
 import Testimonials from "./components/Testimonials";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
         <MainSection />
         <FeatureSection />
         <Workflow />
-        <Pricing />
+        <CallToAction />
         <Testimonials />
         <Footer />
       </div>

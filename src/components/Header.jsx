@@ -31,7 +31,13 @@ const Navbar = () => {
             </a>
             <a
               href="#"
-              className="bg-gradient-to-r from-green-400 to-green-700 py-2 px-3 rounded-md"
+              className="bg-gradient-to-r from-green-700 to-green-800 
+             hover:from-green-800 hover:to-green-900 
+             transition-all duration-300 
+             py-2 px-4 rounded-md 
+             text-white 
+             shadow-lg hover:shadow-xl 
+             transform hover:scale-105"
             >
               Create an account
             </a>

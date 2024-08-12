@@ -78,56 +78,55 @@ export const features = [
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "...",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "...",
   },
   {
-    title: "Review code without worry",
+    title: "...",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "...",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "...",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "...",
   },
   {
-    title: "Share work in minutes",
+    title: "...",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "...",
   },
 ];
 
-export const pricingOptions = [
+export const callToActionOptions = [
   {
-    title: "Free",
+    title: "Join the DEV TEAM",
+    price: "$TBD",
+    features: [
+      "Access to Source Code",
+      "Network with peers",
+      "Work alongside Founder",
+      "Gain experience",
+    ],
+  },
+  {
+    title: "Join the Mailing List",
     price: "$0",
     features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
+      "Access to Newsletter",
+      "Find out features before they roll out",
+      "Get a Mailing List Badge",
     ],
   },
   {
-    title: "Pro",
-    price: "$10",
+    title: "Power VIP",
+    price: "$5",
     features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
-    ],
-  },
-  {
-    title: "Enterprise",
-    price: "$200",
-    features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
+      "Power Stocks VIP Badge",
+      "Access to BETA Features",
+      "2x chance of powerups",
+      "Provide input to DEV TEAM",
     ],
   },
 ];
