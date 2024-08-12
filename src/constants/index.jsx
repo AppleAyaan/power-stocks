@@ -17,22 +17,22 @@ export const navItems = [
 
 export const testimonials = [
   {
-    user: "Your Name Here!",
-    company: "...",
+    user: "Junda Chen",
+    company: "Year 13 Student @ Jumeirah College",
     image: user1,
-    text: "Your review!",
+    text: "I recently had the chance to play Power Stocks and it was a very unique experience. The powerups add playability and excitement to stock investing.",
   },
   {
-    user: "Your Name Here!",
-    company: "...",
+    user: "Samarvir Garg",
+    company: "Grade 12 at White Oaks",
     image: user2,
-    text: "Your review!",
+    text: "Truly a distinctive experience. The game adds a exciting and fresh twist to the traditional approach of investing in stocks, making it entertaining.",
   },
   {
-    user: "Your Name Here!",
-    company: "...",
+    user: "Izaan Faisal",
+    company: "Grade 7 at Dr David R Williams",
     image: user3,
-    text: "Your review!",
+    text: "This game makes stock investing more kid-friendly, and I love playing it especially with all the powerups!! :)",
   },
   
 ];

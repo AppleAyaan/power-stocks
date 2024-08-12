@@ -13,7 +13,7 @@ const Testimonials = () => {
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <img
-                  className="w-12 h-12 mr-6 rounded-full border border-neutral-300"
+                  className="w-12 h-12 mr-6 rounded-full border border-neutral-300 object-cover"
                   src={testimonial.image}
                   alt=""
                 />
