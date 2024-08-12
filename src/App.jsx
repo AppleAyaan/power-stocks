@@ -1,5 +1,5 @@
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Header";
+import MainSection from "./components/MainSection";
 import FeatureSection from "./components/FeatureSection";
 import Workflow from "./components/Workflow";
 import Footer from "./components/Footer";
@@ -11,7 +11,7 @@ const App = () => {
     <>
       <Navbar />
       <div className="max-w-7xl mx-auto pt-20 px-6">
-        <HeroSection />
+        <MainSection />
         <FeatureSection />
         <Workflow />
         <Pricing />
