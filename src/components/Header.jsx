@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { navItems } from "../constants";
+import { Link } from 'react-router-dom'; 
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -15,8 +16,10 @@ const Navbar = () => {
       <div className="container px-1 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
         <div className="flex items-center flex-shrink-0"> {/* adjust margin value for the logo and text here !!!!*/}
-          <img className="h-10 w-10 mr-2" src={logo} alt="Power Stocks Logo" />
-          <span className="text-xl tracking-tight">Power Stocks</span>
+          <Link to="/" className="flex items-center">
+            <img className="h-10 w-10 mr-2" src={logo} alt="Power Stocks Logo" />
+            <span className="text-xl tracking-tight">Power Stocks</span>
+          </Link>
         </div>
         <div className="flex items-center space-x-7 ml-auto"> {/* adjust nav links HERE!!! */}
           <ul className="hidden lg:flex ml-14 space-x-12">
@@ -43,7 +46,7 @@ const Navbar = () => {
             </div>
             <div className="hidden lg:flex justify-center space-x-0 items-center">
               <a
-                href="#"
+                href="/create-account"
                 className="bg-gradient-to-r from-green-700 to-green-800 
               hover:from-green-800 hover:to-green-900 
               transition-all duration-300 

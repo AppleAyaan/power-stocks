@@ -6,7 +6,11 @@ import Footer from "./components/Footer";
 import CallToAction from "./components/CallToActions";
 import Testimonials from "./components/Testimonials";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+{/*pages routes */}
 import SignIn from './pages/SignIn';
+import Dashboard from './pages/Dashboard';
+import CreateAccount from './pages/CreateAccount'
 
 const App = () => {
   return (
@@ -25,6 +29,8 @@ const App = () => {
             </>
           } />
           <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/create-account" element={<CreateAccount />} />
         </Routes>
       </div>
     </Router>

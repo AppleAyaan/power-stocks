@@ -1,10 +1,17 @@
 /* logic made from Chat GPT in order to understand HTML5 validation messges */
 
 import logo from '../assets/logo.png'; 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
   const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  {/* TAB BAR TITLE DONE HERE (copy and paste as needed) */}
+  useEffect(() => {
+    document.title = 'Sign Into Power Stocks'; 
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,7 +25,7 @@ const SignIn = () => {
       setError('Please enter a valid email address.');
     } else {
       setError('');
-      // Handle successful sign-in here
+      navigate('/dashboard');
     }
   };
 
