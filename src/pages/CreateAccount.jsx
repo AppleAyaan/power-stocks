@@ -1,11 +1,23 @@
 import logo from '../assets/logo.png';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const CreateAccount = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
-  
+    
+    const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
+    const toggleConfirmPasswordVisibility = () => {
+        setShowConfirmPassword(!showConfirmPassword);
+    };
+
     const handleSubmit = (event) => {
       event.preventDefault();
       const firstName = event.target.firstName.value;
@@ -110,23 +122,37 @@ const CreateAccount = () => {
               required
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-4 relative">
             <input
-              type="password"
+              type={showPassword ? 'text' : 'password'}
               name="password"
               placeholder="Password"
               className="w-full p-3 rounded bg-neutral-700 text-white placeholder-gray-400 focus:outline-none"
               required
             />
+            <button
+              type="button"
+              onClick={togglePasswordVisibility}
+              className="absolute right-3 top-1/2 transform -translate-y-1/2"
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
           </div>
-          <div className="mb-6">
+          <div className="mb-6 relative">
             <input
-              type="password"
+              type={showConfirmPassword ? 'text' : 'password'}
               name="confirmPassword"
               placeholder="Confirm Password"
               className="w-full p-3 rounded bg-neutral-700 text-white placeholder-gray-400 focus:outline-none"
               required
             />
+            <button
+              type="button"
+              onClick={toggleConfirmPasswordVisibility}
+              className="absolute right-3 top-1/2 transform -translate-y-1/2"
+            >
+              {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
           </div>
           <button
             type="submit"

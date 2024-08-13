@@ -40,7 +40,7 @@ const MainSection = () => {
       </p>
       <div className="flex justify-center my-10">
         <a
-          href="#"
+          href="/create-account"
           className="bg-gradient-to-r from-green-500 to-green-800 py-3 px-12 mx-3 rounded-md"
         >
           Join for free
