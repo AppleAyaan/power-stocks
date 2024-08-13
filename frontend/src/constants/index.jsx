@@ -1,9 +1,8 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
+import { BatteryCharging, CandlestickChart } from "lucide-react";
 import { Fingerprint } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
+import { Flame } from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -39,63 +38,63 @@ export const testimonials = [
 
 export const features = [
   {
-    icon: <BotMessageSquare />,
-    text: "...",
+    icon: <CandlestickChart />,
+    text: "Buy or Sell Stocks",
     description:
-      "...",
+      "Powered by Yahoo Finance's API, you are able to view current up-to-date stock prices.",
   },
   {
     icon: <Fingerprint />,
-    text: "...",
+    text: "Secure Passwords",
     description:
-      "...",
+      "Usernames and passwords are stored securely in order to keep a fair platform.",
   },
   {
     icon: <ShieldHalf />,
-    text: "...",
+    text: "Competitions",
     description:
-      "...",
+      "Leagues and Competitions will be added in order to see how you compete against other users.",
   },
   {
     icon: <BatteryCharging />,
-    text: "...",
+    text: "High Performance, Low-Power",
     description:
-      "...",
+      "This website it designed using many optimization methods in order to ensure it can be played on any device.",
   },
   {
     icon: <PlugZap />,
-    text: "...",
+    text: "Saved Progress",
     description:
-      "...",
+      "All trades and transactions are stored on our database to ensure maximum privacy and protection.",
   },
   {
-    icon: <GlobeLock />,
-    text: "...",
+    icon: <Flame />,
+    text: "Powerups",
     description:
-      "...",
+      "Powerups provide a unique experience to stock investing and turning it into a game appeals younger generations as well!",
   },
 ];
 
 export const checklistItems = [
   {
-    title: "...",
+    title: "Buy or Sell Stocks",
     description:
-      "...",
+      "The ability to buy or sell stocks using Yahoo Finance's API allows for a seamless experience.",
   },
   {
-    title: "...",
+    title: "Stock Simulator",
     description:
-      "...",
+      "Start off with $10,000 of virtual money to learn investing with no consequences.",
   },
   {
-    title: "...",
+    title: "Powerups",
     description:
-      "...",
+      "Different powerups to simulate a game environment and keep you entertained!",
   },
   {
-    title: "...",
+    title: "No Fees",
     description:
-      "...",
+      "Completely Free to help students and users learn financial literacy and test their financial skills and knowledge.",
   },
 ];
 
