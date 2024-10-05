@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SignIn from './pages/SignIn';
 import Dashboard from './pages/Dashboard';
 import CreateAccount from './pages/CreateAccount'
+import Features from './pages/Features'
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/create-account" element={<CreateAccount />} />
+          <Route path="/features" element={<Features />} />
         </Routes>
       </div>
     </Router>
